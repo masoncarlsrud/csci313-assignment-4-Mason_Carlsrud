@@ -1,0 +1,44 @@
+.sidebar-nav {
+    display: flex;
+    flex-direction: column; /* Added this line */
+
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+
+    background: linear-gradient(to left, white, rgb(146, 220, 245));
+}
+
+.sidebar-nav a {
+    margin-bottom: 10px; /* Add margin-bottom to create space between items */
+    padding: 10px; /* Add padding to create a box around each link */
+    display: block; /* Ensure each link takes up the full width */
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+h1 {
+    font-size: 48px; /* Increase the font size to make it bigger */
+    text-align: center; /* Align the text to the center */
+    margin: auto; /* Center the h1 element both horizontally and vertically */
+}
+
+.p1 {
+    font-size: 24px; /* Increase the font size to make it bigger */
+    text-align: center; /* Align the text to the center */
+    margin: auto; /* Center the p element both horizontally and vertically */
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #000000a2);
+}

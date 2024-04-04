@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+{% extends "base_generic.html" %} {% block content %}
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+
+<h1>Home Page</h1>
+
+<p1>
+  Welcome to your very own <em>but very small</em> personal library web page.
+  Here we have a collection of books that you can read, and you can also add
+  your own books to the collection. Please keep in mind that this webpage is
+  still a work in progress, and to be patient with the developers.
+</p1>
+<div class="row">
+  <div class="col-md-5">
+    <h2>Website stats</h2>
+
+    <p>The library has the following record counts:</p>
+    <ul>
+      <li><strong>Books:</strong> {{ num_books }}</li>
+      <li><strong>Copies:</strong> {{ num_instances }}</li>
+      <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+      <li><strong>Authors:</strong> {{ num_authors }}</li>
+    </ul>
+  </div>
+  <div class="col-md-7">
+    <img src="C:\Users\mac00\OneDrive\sophomore\sem2\csci313\VSCode\django_projects\csci313-assignment-4-Mason_Carlsrud\catalog\static\images\Words_of_Radiance.jpg" alt="Words of Radiance" />
+  </div>
+</div>
+
+{% endblock %}
